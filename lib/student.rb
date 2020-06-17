@@ -50,5 +50,8 @@ class Student
     new_stud.grade = row[2]
   end
   
-  
+  def self.find_by_name(name)
+    sql = <<-SQL
+      
+    SQL
 end
