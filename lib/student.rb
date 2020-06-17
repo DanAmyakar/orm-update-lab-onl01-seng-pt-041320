@@ -53,8 +53,16 @@ class Student
   def self.find_by_name(name)
     sql = <<-SQL
       SELECT * FROM students
-      WHERE name = ?;
+      WHERE name = ? LIMIT 1;
     SQL
     DB[:conn].execute(sql, name).map{|row| self.new_from_db(row)}.first
   end
+  
+  def update
+    sql = <<-SQL
+    
+    SQL
+    DB[:conn].execute(sql)
+  end
+  
 end
