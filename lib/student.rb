@@ -55,6 +55,6 @@ class Student
       SELECT * FROM students
       WHERE name = ?;
     SQL
-    DB[:conn].execute(sql, name)
+    DB[:conn].execute(sql, name).map{|row| 
   end
 end
