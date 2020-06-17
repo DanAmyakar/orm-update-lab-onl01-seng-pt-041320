@@ -55,7 +55,7 @@ class Student
   end
   
   def update
-    sql = "UPDATE students "
+    sql = "UPDATE students SET name = ? "
     DB[:conn].execute(sql)
   end
   
