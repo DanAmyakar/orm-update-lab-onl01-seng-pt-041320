@@ -41,7 +41,7 @@ class Student
     new_stud
   end
   
-  def self.new_from_db(result[0], result[1], result[2])
+  def self.new_from_db(result)
     new_stud = Student.new
     new_stud.id = result[0]
     new_stud.name = result[1]
