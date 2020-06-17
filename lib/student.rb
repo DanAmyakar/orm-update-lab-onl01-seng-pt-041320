@@ -55,9 +55,7 @@ class Student
   end
   
   def update
-    sql = <<-SQL
-    
-    SQL
+    sql = "UPDATE"
     DB[:conn].execute(sql)
   end
   
